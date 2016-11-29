@@ -3,21 +3,21 @@
 #
 import numpy as np
 from theano import function
-raise NotImplementedError("TODO: add any other imports you need")
+
 
 def make_vector():
     """
     Returns a new Theano vector.
     """
 
-    raise NotImplementedError("TODO: implement this function.")
+    raise T.vector()
 
 def make_matrix():
     """
     Returns a new Theano matrix.
     """
 
-    raise NotImplementedError("TODO: implement this function.")
+    raise T.matrix()
 
 def elemwise_mul(a, b):
     """
@@ -26,7 +26,7 @@ def elemwise_mul(a, b):
     Returns the elementwise product of a and b
     """
 
-    raise NotImplementedError("TODO: implement this function.")
+    return a * b
 
 def matrix_vector_mul(a, b):
     """
@@ -35,7 +35,7 @@ def matrix_vector_mul(a, b):
     Returns the matrix-vector product of a and b
     """
 
-    raise NotImplementedError("TODO: implement this function.")
+    return T.matmul(a, b) 
 
 if __name__ == "__main__":
     a = make_vector()
