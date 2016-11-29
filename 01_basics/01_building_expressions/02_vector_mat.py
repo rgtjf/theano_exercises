@@ -35,7 +35,7 @@ def matrix_vector_mul(a, b):
     Returns the matrix-vector product of a and b
     """
 
-    return T.matmul(a, b) 
+    return T.dot(a, b) 
 
 if __name__ == "__main__":
     a = make_vector()
