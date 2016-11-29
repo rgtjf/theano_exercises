@@ -2,7 +2,7 @@
 # python 03_tensor.py to see if your solution works!
 import numpy as np
 from theano import function
-raise NotImplementedError("TODO: add any other imports you need")
+
 
 def make_tensor(dim):
     """
@@ -11,7 +11,7 @@ def make_tensor(dim):
     (You can use any dtype you like)
     """
 
-    raise NotImplementedError("TODO: implement this function.")
+    return T.itensor(dim)
 
 def broadcasted_add(a, b):
     """
@@ -23,8 +23,9 @@ def broadcasted_add(a, b):
 
     for all i, j, k, l
     """
-
-    raise NotImplementedError("TODO: implement this function.")
+    
+    return a.dimshuffle(todo) + b.dimshuffle(todo)
+    
 
 def partial_max(a):
     """
